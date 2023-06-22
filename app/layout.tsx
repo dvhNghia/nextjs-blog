@@ -14,8 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-slate-800 dark:text-white">
-        <div className="flex flex-col justify-between min-h-screen max-w-screen-xl mx-auto my-0">
+      <body className="dark:bg-slate-800 dark:text-white p-8 xl:p-0">
+        <div className="flex flex-col justify-between min-h-screen mx-auto max-w-screen-xl my-0">
           <Navbar />
           {children}
           <Footer />

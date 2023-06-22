@@ -22,6 +22,7 @@ function Navbar() {
           </Link>
         ))}
         <button
+          className="rounded-sm text-white bg-green-400 px-2 py-1"
           onClick={() => {
             console.log("logout!");
           }}
