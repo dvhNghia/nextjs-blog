@@ -1,5 +1,6 @@
 "use client";
 import { ButtonProps } from "@/types";
+import { FaArrowRight } from "react-icons/fa";
 import React from "react";
 
 const Button = ({ title, containerStyles, handleClick }: ButtonProps) => {
@@ -10,7 +11,9 @@ const Button = ({ title, containerStyles, handleClick }: ButtonProps) => {
       className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
-      <span className={`flex-1`}>{title}</span>
+      <span className="flex items-center gap-2">
+        {title} <FaArrowRight />
+      </span>
     </button>
   );
 };
