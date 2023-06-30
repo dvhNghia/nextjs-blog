@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.nav__btn {
+  @apply px-2
+}
+
+.nav__btn:hover {
+  @apply text-primary ease-in-out duration-300
+}

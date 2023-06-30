@@ -1,0 +1,5 @@
+font title: Oswald
+font text: Muli
+font input: Crimson Text
+color-green: #59815b
+bg: #f1f1e7

@@ -1,36 +1,57 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import Logo from "public/logo.png";
+import Image from "next/image";
+import { FaMapSigns } from "react-icons/fa";
 
 const links = [
   { id: 1, title: "Home", url: "/" },
-  { id: 2, title: "Portfolio", url: "/portfolio" },
-  { id: 3, title: "Blog", url: "/blog" },
-  { id: 4, title: "About", url: "/about" },
-  { id: 5, title: "Contact", url: "/contact" },
-  { id: 6, title: "Dashboard", url: "/dashboard" },
+  { id: 2, title: "Pages", url: "/page" },
+  { id: 3, title: "Destinations", url: "/destination" },
+  { id: 5, title: "Blogs", url: "/blog" },
+  { id: 6, title: "Shop", url: "/shop" },
+  { id: 7, title: "Landing", url: "/landing" },
 ];
 
 function Navbar() {
+  const handleLogout = () => {
+    console.log("log out!");
+  };
+
   return (
-    <div className="flex justify-between items-center h-[100px]">
-      <div className="font-bold text-2xl">Logo</div>
-      <div className="flex justify-between items-center gap-5">
-        {links.map((link) => (
-          <Link key={link.id} href={link.url}>
-            {link.title}
-          </Link>
-        ))}
-        <button
-          className="rounded-sm text-white bg-green-400 px-2 py-1"
-          onClick={() => {
-            console.log("logout!");
-          }}
-        >
-          Logout
-        </button>
+    <header className="flex justify-between items-center h-[100px] my-5 border-b border-white">
+      <div className="font-bold text-2xl flex justify-center items-center gap-5">
+        <FaMapSigns className="text-2xl" />
+        <span>Destinations</span>
       </div>
-    </div>
+      <div className="flex gap-5 justify-center items-center">
+        <nav className="flex justify-between items-center gap-10 font-bold text-lg">
+          {links.slice(0, 3).map((link) => (
+            <Link key={link.id} href={link.url} className="nav__btn">
+              {link.title.toUpperCase()}
+            </Link>
+          ))}
+        </nav>
+        <div>
+          <Image
+            src={Logo}
+            alt="logo"
+            width={150}
+            height={150}
+            className="object-contain"
+          />
+        </div>
+        <nav className="flex justify-between items-center gap-10 font-bold text-lg">
+          {links.slice(3).map((link) => (
+            <Link key={link.id} href={link.url} className="nav__btn">
+              {link.title.toUpperCase()}
+            </Link>
+          ))}
+        </nav>
+      </div>
+      <div className="font-bold text-2xl">Search</div>
+    </header>
   );
 }
 

@@ -1,9 +1,10 @@
 import Navbar from "@/components/Navbar";
-import "./globals.css";
 import Footer from "@/components/Footer";
 
+import "./globals.css";
+
 export const metadata = {
-  title: "Nghia Blog's",
+  title: "Travel Blogs",
   description: "Created by Nghia",
 };
 
@@ -14,12 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-slate-800 dark:text-white p-8 xl:p-0">
-        <div className="flex flex-col justify-between min-h-screen mx-auto max-w-screen-xl my-0">
+      <body className="sm:px-5 md:px-10 text-white">
           <Navbar />
           {children}
-          <Footer />
-        </div>
+          {/* <Footer /> */}
       </body>
     </html>
   );
