@@ -2,11 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .nav__btn {
-  @apply px-2
-}
+  @apply text-white px-2 py-1 relative z-10 ease-linear duration-300
 
-.nav__btn:hover {
-  @apply text-primary ease-in-out duration-300
+  before:content-[''] 
+  before:absolute 
+  before:rounded-sm
+  before:bg-transparent 
+  before:block 
+  before:top-0 
+  before:bottom-0
+  before:right-10
+  before:-left-10 
+  before:transform 
+  before:ease-in-out 
+  before:duration-300
+
+  hover:before:bg-white
+  hover:before:opacity-70
+  hover:before:left-0
+  hover:before:right-0
+  hover:before:-z-10
+  hover:before:overflow-hidden
+
+  hover:text-primary
 }

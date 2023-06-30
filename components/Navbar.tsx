@@ -21,11 +21,11 @@ function Navbar() {
 
   return (
     <header className="flex justify-between items-center h-[100px] my-5 border-b border-white">
-      <div className="font-bold text-2xl flex justify-center items-center gap-5">
+      <div className="w-[200px] font-bold text-2xl flex justify-center items-center gap-5">
         <FaMapSigns className="text-2xl" />
         <span>Destinations</span>
       </div>
-      <div className="flex gap-5 justify-center items-center">
+      <div className="w-[1000px] grow flex gap-5 justify-center items-center">
         <nav className="flex justify-between items-center gap-10 font-bold text-lg">
           {links.slice(0, 3).map((link) => (
             <Link key={link.id} href={link.url} className="nav__btn">
@@ -50,7 +50,7 @@ function Navbar() {
           ))}
         </nav>
       </div>
-      <div className="font-bold text-2xl">Search</div>
+      <div className="w-[250px] font-bold text-2xl">Search</div>
     </header>
   );
 }
