@@ -11,10 +11,11 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full mx-auto">
-      <Image src={HeroImage} alt="Hero" fill className="object-cover -z-10" />
-      <div className="h-[700px]">
-        <div className="flex flex-col justify-center items-center w-[1000px] mx-auto h-full overflow-hidden text-center">
+    <div className="w-full h-[75vh] mx-auto flex flex-col justify-center items-center">
+      <div className="">
+        <Image src={HeroImage} alt="Hero" fill className="object-cover -z-10" />
+      </div>
+      <div className="flex flex-col justify-center items-center w-[1000px] mx-auto h-full overflow-hidden text-center">
           <div className="flex gap-2 my-2">
             <span className="flex gap-2 items-center">
               <FaRegCalendarAlt /> October 11, 2019
@@ -38,7 +39,6 @@ const Hero = () => {
             />
           </div>
         </div>
-      </div>
     </div>
   );
 };

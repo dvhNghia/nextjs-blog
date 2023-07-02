@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="sm:px-5 md:px-10 text-white">
+      <body className="text-white">
           <Navbar />
           {children}
           {/* <Footer /> */}

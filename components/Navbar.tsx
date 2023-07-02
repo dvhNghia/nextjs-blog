@@ -20,7 +20,7 @@ function Navbar() {
   };
 
   return (
-    <header className="flex justify-between items-center h-[100px] my-5 border-b border-white">
+    <header className="flex justify-between items-center h-[100px] my-5 border-b border-white sm:px-5 md:px-10">
       <div className="w-[200px] font-bold text-2xl flex justify-center items-center gap-5">
         <FaMapSigns className="text-2xl" />
         <span>Destinations</span>

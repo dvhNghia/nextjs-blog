@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .nav__btn {
-  @apply text-white px-2 py-1 relative z-10 ease-linear duration-300
+  @apply text-white px-4 py-2 relative z-10 ease-linear duration-500
 
   before:content-[''] 
   before:absolute 
@@ -15,15 +15,12 @@
   before:right-10
   before:-left-10 
   before:transform 
-  before:ease-in-out 
-  before:duration-300
+  before:ease-out
+  before:duration-500
 
   hover:before:bg-white
-  hover:before:opacity-70
   hover:before:left-0
   hover:before:right-0
   hover:before:-z-10
-  hover:before:overflow-hidden
-
   hover:text-primary
 }

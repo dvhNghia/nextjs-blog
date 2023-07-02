@@ -12,18 +12,12 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-bg': "url('/hero-bg.png')",
+        'brand-bg': "url('/bg-1.png')",
       },
       colors: {
         'primary': '#59815b',
         'secondary': '#f1f1e7'
       },
-      // keyframes: {
-      //   scaleUp: {
-      //     '0%': { transform: 'scale(1)' },
-      //     '50%': { transform: 'scale(0.95)' },
-      //     '100%': { transform: 'scale(1)' }
-      //   }
-      // }
     },
   },
   plugins: [

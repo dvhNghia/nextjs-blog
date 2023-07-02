@@ -1,3 +1,4 @@
+import Brand from "@/components/Brand";
 import Hero from "@/components/Hero";
 import { Poppins, Oswald, Crimson_Text } from "next/font/google";
 
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main className={poppins.className}>
       <Hero/>
+      <Brand/>
     </main>
   );
 }
